@@ -1,0 +1,530 @@
+2025-02-09T22:42:40.027+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 8336 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:42:40.029+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:42:40.058+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:42:40.065+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:42:40.691+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:42:40.708+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:42:41.296+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:42:41.304+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:42:41.304+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:42:41.348+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:42:41.349+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1282 ms
+2025-02-09T22:42:41.577+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:42:41.612+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:42:41.634+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:42:41.809+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:42:41.830+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:42:42.034+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@349271df
+2025-02-09T22:42:42.036+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:42:42.068+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:42:42.068+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:42:42.079+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:42:42.303+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:42:42.307+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:42:42.365+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:42:42.429+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:42:42.611+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-09T22:42:42.762+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:42:43.135+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:42:43.140+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:42:43.196+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:42:43.208+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.556 seconds (process running for 4.392)
+2025-02-09T22:42:43.824+02:00  INFO 8336 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:42:43.824+02:00  INFO 8336 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:42:43.825+02:00  INFO 8336 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:43:04.222+02:00  INFO 8336 --- [GlowtiqueShop] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-02-09T22:43:04.225+02:00  INFO 8336 --- [GlowtiqueShop] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:43:04.387+02:00  INFO 8336 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:43:04.395+02:00  INFO 8336 --- [GlowtiqueShop] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:43:04.400+02:00  INFO 8336 --- [GlowtiqueShop] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:43:04.407+02:00  INFO 8336 --- [GlowtiqueShop] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:43:04.532+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 8336 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:43:04.532+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:43:04.772+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:43:04.774+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:43:04.874+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:43:04.875+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:43:04.875+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:43:04.899+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:43:04.899+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 365 ms
+2025-02-09T22:43:04.964+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:43:04.966+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:43:04.973+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:43:04.974+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-02-09T22:43:04.984+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f601db5
+2025-02-09T22:43:04.984+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-02-09T22:43:04.984+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:43:04.985+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:43:04.985+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:43:05.000+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:43:05.000+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:43:05.022+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:43:05.045+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:43:05.107+02:00  WARN 8336 --- [GlowtiqueShop] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-09T22:43:05.295+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:43:05.299+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:43:05.321+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:43:05.329+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 0.836 seconds (process running for 26.513)
+2025-02-09T22:43:05.330+02:00  INFO 8336 --- [GlowtiqueShop] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-09T22:43:05.370+02:00  INFO 8336 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:43:05.370+02:00  INFO 8336 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:43:05.371+02:00  INFO 8336 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:44:11.664+02:00  INFO 8336 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:44:11.748+02:00  INFO 8336 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:44:11.751+02:00  INFO 8336 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:44:11.752+02:00  INFO 8336 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-02-09T22:44:11.756+02:00  INFO 8336 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-02-09T22:44:14.862+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 13740 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:44:14.863+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:44:14.887+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:44:14.887+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:44:15.495+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:44:15.508+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:44:16.086+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:44:16.094+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:44:16.094+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:44:16.140+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:44:16.140+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1252 ms
+2025-02-09T22:44:16.363+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:44:16.393+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:44:16.416+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:44:16.577+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:44:16.597+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:44:16.767+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d655f3a
+2025-02-09T22:44:16.768+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:44:16.796+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:44:16.798+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:44:16.809+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:44:16.999+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:44:17.003+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:44:17.054+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:44:17.091+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:44:17.111+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:44:17.427+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:44:17.817+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:44:17.822+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:44:17.879+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:44:17.892+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.298 seconds (process running for 3.825)
+2025-02-09T22:44:18.206+02:00  INFO 13740 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:44:18.207+02:00  INFO 13740 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:44:18.210+02:00  INFO 13740 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-02-09T22:46:03.066+02:00  INFO 13740 --- [GlowtiqueShop] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-02-09T22:46:03.069+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:46:03.156+02:00  INFO 13740 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:46:03.161+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:03.163+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:46:03.169+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:46:03.239+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 13740 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:46:03.239+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:46:03.423+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:46:03.424+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:46:03.506+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:46:03.507+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:46:03.507+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:46:03.530+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:46:03.530+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 290 ms
+2025-02-09T22:46:03.596+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:46:03.597+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:46:03.604+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:46:03.605+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-02-09T22:46:03.614+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21994760
+2025-02-09T22:46:03.615+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-02-09T22:46:03.615+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:46:03.615+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:46:03.615+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:46:03.627+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:46:03.627+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:03.651+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:46:03.669+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:46:03.679+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:46:03.935+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:46:03.938+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:46:03.958+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:46:03.965+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 0.744 seconds (process running for 109.9)
+2025-02-09T22:46:03.967+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-09T22:46:37.973+02:00  INFO 13740 --- [GlowtiqueShop] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 1 deletion, 0 modifications)
+2025-02-09T22:46:37.974+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:46:38.059+02:00  INFO 13740 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:46:38.061+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:38.062+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-02-09T22:46:38.066+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-02-09T22:46:38.137+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 13740 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:46:38.137+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:46:38.311+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:46:38.313+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:46:38.396+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:46:38.397+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:46:38.397+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:46:38.421+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:46:38.421+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 283 ms
+2025-02-09T22:46:38.486+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:46:38.488+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:46:38.493+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:46:38.493+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-02-09T22:46:38.503+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@654400a9
+2025-02-09T22:46:38.504+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-02-09T22:46:38.504+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:46:38.504+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:46:38.505+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:46:38.515+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:46:38.515+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:38.538+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:46:38.556+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:46:38.565+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:46:38.840+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:46:38.843+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:46:38.866+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:46:38.874+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 0.755 seconds (process running for 144.808)
+2025-02-09T22:46:38.875+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-09T22:46:56.645+02:00  INFO 13740 --- [GlowtiqueShop] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-02-09T22:46:56.646+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:46:56.777+02:00  INFO 13740 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:46:56.779+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:56.780+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-02-09T22:46:56.788+02:00  INFO 13740 --- [GlowtiqueShop] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-02-09T22:46:56.867+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 13740 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:46:56.867+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:46:57.064+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:46:57.065+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:46:57.138+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:46:57.138+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:46:57.138+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:46:57.159+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:46:57.159+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 291 ms
+2025-02-09T22:46:57.225+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:46:57.226+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:46:57.231+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:46:57.232+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-02-09T22:46:57.241+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@961760f
+2025-02-09T22:46:57.241+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-02-09T22:46:57.241+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:46:57.241+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:46:57.241+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:46:57.250+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:46:57.250+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:46:57.272+02:00  WARN 13740 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:46:57.290+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:46:57.299+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:46:57.604+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:46:57.608+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:46:57.632+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:46:57.639+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 0.802 seconds (process running for 163.574)
+2025-02-09T22:46:57.642+02:00  INFO 13740 --- [GlowtiqueShop] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-09T22:47:24.175+02:00  INFO 13740 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:47:24.255+02:00  INFO 13740 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:47:24.257+02:00  INFO 13740 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:47:24.257+02:00  INFO 13740 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-02-09T22:47:24.262+02:00  INFO 13740 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-02-09T22:47:38.229+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 24432 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:47:38.232+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:47:38.256+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:47:38.256+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:47:38.844+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:47:38.857+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:47:39.388+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:47:39.396+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:47:39.396+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:47:39.440+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:47:39.440+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1184 ms
+2025-02-09T22:47:39.645+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:47:39.679+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:47:39.698+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:47:39.852+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:47:39.878+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:47:40.059+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fb054ab
+2025-02-09T22:47:40.062+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:47:40.104+02:00  WARN 24432 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:47:40.104+02:00  WARN 24432 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:47:40.118+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:47:40.352+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:47:40.358+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:47:40.411+02:00  WARN 24432 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:47:40.452+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:47:40.472+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:47:40.904+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:47:41.349+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:47:41.359+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:47:41.420+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:47:41.433+02:00  INFO 24432 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.47 seconds (process running for 3.986)
+2025-02-09T22:47:41.584+02:00  INFO 24432 --- [GlowtiqueShop] [RMI TCP Connection(4)-192.168.0.104] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:47:41.585+02:00  INFO 24432 --- [GlowtiqueShop] [RMI TCP Connection(4)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:47:41.588+02:00  INFO 24432 --- [GlowtiqueShop] [RMI TCP Connection(4)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-02-09T22:49:03.185+02:00  INFO 24432 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:49:03.269+02:00  INFO 24432 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:49:03.273+02:00  INFO 24432 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:49:03.276+02:00  INFO 24432 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:49:03.282+02:00  INFO 24432 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:49:06.371+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 26616 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:49:06.372+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:49:06.397+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:49:06.397+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:49:07.053+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:49:07.067+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:49:07.668+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:49:07.678+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:49:07.678+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:49:07.731+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:49:07.731+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
+2025-02-09T22:49:07.978+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:49:08.012+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:49:08.031+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:49:08.193+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:49:08.214+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:49:08.387+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5467afb2
+2025-02-09T22:49:08.388+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:49:08.416+02:00  WARN 26616 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:49:08.417+02:00  WARN 26616 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:49:08.427+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:49:08.614+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:49:08.617+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:49:08.665+02:00  WARN 26616 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:49:08.698+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:49:08.721+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:49:09.053+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:49:09.447+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:49:09.453+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:49:09.510+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:49:09.522+02:00  INFO 26616 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.425 seconds (process running for 3.963)
+2025-02-09T22:49:09.563+02:00  INFO 26616 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:49:09.563+02:00  INFO 26616 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:49:09.564+02:00  INFO 26616 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:49:55.017+02:00  INFO 26616 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:49:55.120+02:00  INFO 26616 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:49:55.125+02:00  INFO 26616 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:49:55.127+02:00  INFO 26616 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:49:55.134+02:00  INFO 26616 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:49:58.150+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 24100 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:49:58.151+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:49:58.177+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:49:58.177+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:49:58.977+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:49:58.996+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:49:59.673+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:49:59.681+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:49:59.681+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:49:59.729+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:49:59.730+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
+2025-02-09T22:49:59.986+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:50:00.030+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:50:00.053+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:50:00.249+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:50:00.268+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:50:00.446+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55342d62
+2025-02-09T22:50:00.447+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:50:00.478+02:00  WARN 24100 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:50:00.479+02:00  WARN 24100 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:50:00.490+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:50:00.681+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:50:00.685+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:50:00.741+02:00  WARN 24100 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:50:00.779+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:50:00.798+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:50:01.139+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:50:01.517+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:50:01.522+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:50:01.578+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:50:01.590+02:00  INFO 24100 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.729 seconds (process running for 4.281)
+2025-02-09T22:50:01.660+02:00  INFO 24100 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:50:01.661+02:00  INFO 24100 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:50:01.662+02:00  INFO 24100 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:50:40.232+02:00  INFO 24100 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:50:40.311+02:00  INFO 24100 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:50:40.317+02:00  INFO 24100 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:50:40.319+02:00  INFO 24100 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:50:40.325+02:00  INFO 24100 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:50:43.414+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 26436 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:50:43.416+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:50:43.441+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:50:43.441+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:50:44.171+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:50:44.184+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:50:44.701+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:50:44.708+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:50:44.708+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:50:44.752+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:50:44.752+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1311 ms
+2025-02-09T22:50:44.943+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:50:44.975+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:50:44.993+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:50:45.150+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:50:45.170+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:50:45.333+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f38aab7
+2025-02-09T22:50:45.335+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:50:45.361+02:00  WARN 26436 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:50:45.361+02:00  WARN 26436 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:50:45.373+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:50:45.558+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:50:45.561+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:50:45.610+02:00  WARN 26436 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:50:45.644+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:50:45.664+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:50:45.981+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:50:46.368+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:50:46.374+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:50:46.431+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:50:46.443+02:00  INFO 26436 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.305 seconds (process running for 3.917)
+2025-02-09T22:50:46.657+02:00  INFO 26436 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:50:46.657+02:00  INFO 26436 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:50:46.659+02:00  INFO 26436 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:53:43.445+02:00  INFO 26436 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:53:43.528+02:00  INFO 26436 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:53:43.532+02:00  INFO 26436 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:53:43.535+02:00  INFO 26436 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:53:43.542+02:00  INFO 26436 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:53:46.700+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 8324 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:53:46.703+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:53:46.731+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:53:46.731+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:53:47.461+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:53:47.475+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:53:48.029+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:53:48.037+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:53:48.038+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:53:48.081+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:53:48.081+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1349 ms
+2025-02-09T22:53:48.293+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:53:48.324+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:53:48.342+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:53:48.491+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:53:48.516+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:53:48.684+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b8173d0
+2025-02-09T22:53:48.686+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:53:48.714+02:00  WARN 8324 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:53:48.715+02:00  WARN 8324 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:53:48.725+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:53:48.917+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:53:48.920+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:53:48.973+02:00  WARN 8324 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:53:49.011+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:53:49.032+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:53:49.349+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:53:49.720+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:53:49.725+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:53:49.781+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:53:49.792+02:00  INFO 8324 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 3.392 seconds (process running for 3.958)
+2025-02-09T22:53:49.969+02:00  INFO 8324 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:53:49.970+02:00  INFO 8324 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:53:49.971+02:00  INFO 8324 --- [GlowtiqueShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-09T22:54:24.426+02:00  INFO 8324 --- [GlowtiqueShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-09T22:54:24.510+02:00  INFO 8324 --- [GlowtiqueShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-09T22:54:24.516+02:00  INFO 8324 --- [GlowtiqueShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:54:24.518+02:00  INFO 8324 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-09T22:54:24.524+02:00  INFO 8324 --- [GlowtiqueShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-09T22:54:27.776+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Starting GlowtiqueShopApplication using Java 17.0.13 with PID 23528 (C:\Users\Damian\Downloads\GlowtiqueShop\target\classes started by Damian in C:\Users\Damian\Downloads\GlowtiqueShop)
+2025-02-09T22:54:27.777+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : The following 1 profile is active: "dev"
+2025-02-09T22:54:27.801+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-09T22:54:27.801+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-09T22:54:28.430+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-09T22:54:28.445+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-02-09T22:54:29.025+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-09T22:54:29.033+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-09T22:54:29.033+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-09T22:54:29.077+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-09T22:54:29.078+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2025-02-09T22:54:29.372+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-09T22:54:29.411+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-09T22:54:29.435+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-09T22:54:29.632+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-09T22:54:29.655+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-09T22:54:30.057+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b8173d0
+2025-02-09T22:54:30.058+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-09T22:54:30.104+02:00  WARN 23528 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-09T22:54:30.107+02:00  WARN 23528 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-09T22:54:30.135+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-09T22:54:30.441+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-09T22:54:30.448+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-09T22:54:30.558+02:00  WARN 23528 --- [GlowtiqueShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-09T22:54:30.658+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-09T22:54:30.696+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-09T22:54:31.054+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] c.a.c.h.n.implementation.NettyUtility    : {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.115.Final","azure-netty-native-version":"2.0.69.Final","classpath-netty-version-io.netty:netty-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler":"4.1.117.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.117.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.117.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.117.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.117.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.69.Final"}
+2025-02-09T22:54:31.428+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-09T22:54:31.434+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-09T22:54:31.490+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-09T22:54:31.503+02:00  INFO 23528 --- [GlowtiqueShop] [restartedMain] c.e.glowtique.GlowtiqueShopApplication   : Started GlowtiqueShopApplication in 4.04 seconds (process running for 4.65)
+2025-02-09T22:54:31.962+02:00  INFO 23528 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-09T22:54:31.962+02:00  INFO 23528 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-09T22:54:31.964+02:00  INFO 23528 --- [GlowtiqueShop] [RMI TCP Connection(1)-192.168.0.104] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
