@@ -1,6 +1,5 @@
 package com.example.glowtique.web;
 
-import com.azure.core.annotation.Get;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +18,9 @@ public class IndexController {
         return "perfumes";
     }
 
-    @GetMapping("/profile")
+    @GetMapping("/login")
     public String getProfilePage() {
-        return "profile";
+        return "login";
     }
 
     @GetMapping("/dior")
@@ -29,7 +28,15 @@ public class IndexController {
         return "dior";
     }
 
+    @GetMapping("/location")
+    public String getLocationPage() {
+        return "location";
+    }
 
+    @GetMapping("/register")
+    public String getRegisterPage() {
+        return "register";
+    }
 
 
 }

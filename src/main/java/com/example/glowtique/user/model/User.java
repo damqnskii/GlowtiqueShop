@@ -1,13 +1,14 @@
 package com.example.glowtique.user.model;
 
+import com.example.glowtique.cart.model.Cart;
 import com.example.glowtique.order.model.Order;
+import com.example.glowtique.wishlistItem.model.WishlistItem;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Builder
@@ -57,9 +58,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Country country;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "client")
-    private Set<Order> orders;
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
+    private Set<Order> orders = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private Set<WishlistItem> wishlistItems = new HashSet<>();
 
+    @OneToOne(fetch = FetchType.LAZY)
+    private Cart cart;
 
 }

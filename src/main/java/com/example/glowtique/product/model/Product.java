@@ -1,6 +1,8 @@
 package com.example.glowtique.product.model;
 
 import com.example.glowtique.brand.model.Brand;
+import com.example.glowtique.category.model.Category;
+import com.example.glowtique.order.model.OrderItem;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -37,11 +39,15 @@ public class Product {
 
     private String description;
 
+    private String image;
+
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
     @Column(nullable = false)
     private LocalDateTime updatedAt;
 
+    @ManyToOne
+    private Category category;
 }
 

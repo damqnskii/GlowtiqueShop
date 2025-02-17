@@ -10,7 +10,9 @@ body {
     justify-content: center;
     margin-bottom: inherit;
     background-color: lightgray;
+    padding: 10px;
 }
+
 img {
     width: 175px; 
     height: auto;

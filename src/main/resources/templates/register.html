@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <img src="/images/glowtique-logo.png" alt="photo">
+    </div>
+</header>
+<main>
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender (Optional)</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday (Optional)</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+                       required>
+            </div>
+            <button type="submit" class="register-button">Register</button>
+            <div class="already-registered">
+                <a th:href="@{/login}">Already registered?</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© Copyright Glowtique All Rights Reserved 2025</p>
+    </div>
+</main>
+</body>
+</html>

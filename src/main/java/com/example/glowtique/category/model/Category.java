@@ -1,4 +1,4 @@
-package com.example.glowtique.brand.model;
+package com.example.glowtique.category.model;
 
 import com.example.glowtique.product.model.Product;
 import jakarta.persistence.*;
@@ -14,19 +14,20 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Brand {
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    private String logo;
-
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String name;
 
-    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private CategoryType categoryType;
+
+    @Column(length = 750)
     private String description;
 
-    @OneToMany
+    @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
 }
